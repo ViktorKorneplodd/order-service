@@ -1,10 +1,8 @@
-# Виртуальное окружение
 .venv/
 venv/
 env/
 ENV/
 
-# Python
 __pycache__/
 *.py[cod]
 *.so
@@ -13,41 +11,32 @@ __pycache__/
 dist/
 build/
 
-# База данных
 db.sqlite3
 *.db
 
-# IDE
 .idea/
 .vscode/
 *.iml
 
-# Логи
 *.log
 
-# Django
 *.pyc
 *.pyo
 *.mo
 *.pot
 
-# Тестовые JSON файлы
 test.json
 test_with_promo.json
 
-# HTTP тестовые файлы
 *.http
 
-# Переменные окружения
 .env
 .env.local
 
-# OS
 .DS_Store
 Thumbs.db
 desktop.ini
 
-# Временные файлы
 *.tmp
 *.bak
 *.swp
