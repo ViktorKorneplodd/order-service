@@ -25,7 +25,9 @@
 ## Откройте терминал и выполните:
 `python manage.py shell`
 
-## Скопируйте и вставьте этот код:
+### Подготовка тестовых данных
+
+## Откройте терминал и выполните:
 from orders.models import Good, PromoCode
 from django.utils import timezone
 from datetime import timedelta
@@ -49,6 +51,6 @@ exit()
 `curl -X POST http://127.0.0.1:8000/api/orders/create/ -H "Content-Type: application/json" -d '{"user_id":1,"goods":[{"good_id":1,"quantity":2}],"promo_code":"SUMMER2025"}'`
 
 ## Другие тесты
-- Заказ без промокода	    {"user_id":2,"goods":[{"good_id":3,"quantity":1}]}
-- Неверный промокод	        {"user_id":3,"goods":[{"good_id":1,"quantity":1}],"promo_code":"FAKE"}
-- Товар исключён из акций	{"user_id":4,"goods":[{"good_id":2,"quantity":1}],"promo_code":"SUMMER2025"}
+- Заказ без промокода	   | {"user_id":2,"goods":[{"good_id":3,"quantity":1}]} |
+- Неверный промокод	       | {"user_id":3,"goods":[{"good_id":1,"quantity":1}],"promo_code":"FAKE"} |
+- Товар исключён из акций	| {"user_id":4,"goods":[{"good_id":2,"quantity":1}],"promo_code":"SUMMER2025"} |
