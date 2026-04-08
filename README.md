@@ -22,12 +22,12 @@
 
 ## Как тестировать API
 
-# Подготовка тестовых данных
+## Подготовка тестовых данных
 
-# Откройте терминал и выполните:
+## Откройте терминал и выполните:
 `python manage.py shell`
 
-# Скопируйте и вставьте этот код:
+## Скопируйте и вставьте этот код:
 "from orders.models import Good, PromoCode
 from django.utils import timezone
 from datetime import timedelta
