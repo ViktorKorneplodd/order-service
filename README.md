@@ -26,7 +26,7 @@
 `python manage.py shell`
 
 ## Скопируйте и вставьте этот код:
-"from orders.models import Good, PromoCode
+from orders.models import Good, PromoCode
 from django.utils import timezone
 from datetime import timedelta
 
@@ -41,7 +41,7 @@ PromoCode.objects.create(
     applicable_category="electronics"
 )
 print("Готово!")
-exit()"
+exit()
 
 ## Отправьте тестовый запрос
 `curl -X POST http://127.0.0.1:8000/api/orders/create/ -H "Content-Type: application/json" -d "{\"user_id\":1,\"goods\":[{\"good_id\":1,\"quantity\":2}],\"promo_code\":\"SUMMER2025\"}"`
